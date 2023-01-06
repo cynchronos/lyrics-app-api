@@ -8,6 +8,7 @@
   "scripts": {
     "format": "prettier --write \"**/*.js\"",
     "start": "babel-node index.js",
+    "build": "npm run build",
     "start:dev": "nodemon",
     "test": "jest",
     "test:cov": "jest --coverage",
