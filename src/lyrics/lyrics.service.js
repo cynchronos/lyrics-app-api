@@ -10,26 +10,26 @@ export class LyricsService {
     }
 
     async findTitle(query) {
+        console.log(query)
+        // const data = await this.lyrics.find({
+        //     $or: [
+        //         { title: { $regex: query, $options: "i" } },
+        //         { artist: { $regex: query, $options: "i" } }
+        //     ]
+        // }).exec();
+        // // console.log(data);
 
-        const data = await this.lyrics.find({
-            $or: [
-                { title: { $regex: query, $options: "i" } },
-                { artist: { $regex: query, $options: "i" } }
-            ]
-        }).exec();
-        // console.log(data);
-
-        if (data.length > 0) {
-            return {
-                statusCode: HttpStatus.OK.valueOf(),
-                data: data.map(e => e.title)
-            }
-        } else {
-            return {
-                statusCode: HttpStatus.BAD_REQUEST.valueOf(),
-                data: "Data tidak ditemukan"
-            }
-        }
+        // if (data.length > 0) {
+        //     return {
+        //         statusCode: HttpStatus.OK.valueOf(),
+        //         data: data.map(e => e.title)
+        //     }
+        // } else {
+        //     return {
+        //         statusCode: HttpStatus.BAD_REQUEST.valueOf(),
+        //         data: "Data tidak ditemukan"
+        //     }
+        // }
     }
 
     async findLyrics(title) {
