@@ -1,5 +1,5 @@
-import { Test } from '@nestjs/testing';
-import { LyricsService } from './lyrics.service';
+const { Test } = require('@nestjs/testing');
+const { LyricsService } = require('./lyrics.service');
 
 describe('LyricsService', () => {
   let service;

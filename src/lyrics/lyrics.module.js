@@ -1,8 +1,8 @@
-import { Module } from '@nestjs/common';
-import { MongooseModule } from '@nestjs/mongoose'
-import { Lyrics, LyricsSchema } from '../models/LyricsSchema';
-import { LyricsController } from './lyrics.controller';
-import { LyricsService } from './lyrics.service';
+const { Module } = require('@nestjs/common');
+const { MongooseModule } = require('@nestjs/mongoose');
+const { Lyrics, LyricsSchema } = require('../models/LyricsSchema');
+const { LyricsController } = require('./lyrics.controller');
+const { LyricsService } = require('./lyrics.service');
 
 @Module({
   imports: [

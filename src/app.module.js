@@ -1,9 +1,9 @@
-import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import {ConfigModule} from '@nestjs/config'
-import { DatabaseModule } from './database/database.module';
-import { LyricsModule } from './lyrics/lyrics.module';
+const { Module } = require('@nestjs/common');
+const { AppController } = require('./app.controller');
+const { AppService } = require('./app.service');
+const {ConfigModule} = require('@nestjs/config');
+const { DatabaseModule } = require('./database/database.module');
+const { LyricsModule } = require('./lyrics/lyrics.module');
 
 ConfigModule.forRoot()
 

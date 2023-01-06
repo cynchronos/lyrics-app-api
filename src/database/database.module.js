@@ -1,6 +1,6 @@
-import { Module } from '@nestjs/common';
-import { MongooseModule } from '@nestjs/mongoose';
-import {ConfigModule} from '@nestjs/config'
+const { Module } = require('@nestjs/common');
+const { MongooseModule } = require('@nestjs/mongoose');
+const {ConfigModule} = require('@nestjs/config');
 
 ConfigModule.forRoot()
 

@@ -1,5 +1,5 @@
-import { Controller, Dependencies, Get } from '@nestjs/common';
-import { AppService } from './app.service';
+const { Controller, Dependencies, Get } = require('@nestjs/common');
+const { AppService } = require('./app.service');
 
 @Controller()
 @Dependencies(AppService)

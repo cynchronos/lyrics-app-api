@@ -1,6 +1,6 @@
-import { Test } from '@nestjs/testing';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+const { Test } = require('@nestjs/testing');
+const { AppController } = require('./app.controller');
+const { AppService } = require('./app.service');
 
 describe('AppController', () => {
   let appController;

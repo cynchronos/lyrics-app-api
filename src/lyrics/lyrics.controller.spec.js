@@ -1,5 +1,5 @@
-import { Test } from '@nestjs/testing';
-import { LyricsController } from './lyrics.controller';
+const { Test } = require('@nestjs/testing');
+const { LyricsController } = require('./lyrics.controller');
 
 describe('Lyrics Controller', () => {
   let controller;

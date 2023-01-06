@@ -1,5 +1,5 @@
-import { Controller, Get, Post, Put, Dependencies, Bind, Param, Query, Body, Delete } from '@nestjs/common';
-import { LyricsService } from './lyrics.service';
+const { Controller, Get, Post, Put, Dependencies, Bind, Param, Query, Body, Delete } =  require('@nestjs/common');
+const { LyricsService } =  require('./lyrics.service');
 
 @Controller('lyrics')
 @Dependencies(LyricsService)

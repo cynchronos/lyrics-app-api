@@ -1,6 +1,6 @@
-import { Injectable, Dependencies, HttpStatus, Query } from '@nestjs/common';
-import { getModelToken } from '@nestjs/mongoose';
-import { Lyrics } from '../models/LyricsSchema';
+const { Injectable, Dependencies, HttpStatus, Query } = require('@nestjs/common');
+const { getModelToken } = require('@nestjs/mongoose');
+const { Lyrics } = require('../models/LyricsSchema');
 
 @Injectable()
 @Dependencies(getModelToken(Lyrics.name))
