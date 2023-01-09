@@ -14,3 +14,4 @@ const { LyricsService } = require('./lyrics.service');
   providers: [LyricsService]
 })
 export class LyricsModule {}
+
